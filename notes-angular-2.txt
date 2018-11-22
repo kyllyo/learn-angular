@@ -1,0 +1,111 @@
+
+Notas - Curso Angular 2
+
+1 - Capitulo 1 
+	- Tudo é um compontente.
+	- Existe um componente Raiz.
+	- {} - Componente - é a junção de 3 itens: template, metadados, dados 
+	- Componente Raiz  
+	- Router - responsavel pela navegacao. Mesmo a aplicação tendo só uma página.
+	- Blocos Principais:
+		- Componentes		-Template
+		- Diretivas		-Metadata
+		- Roteamento		-Data Binding
+		- Servicos		-Injeção de Dependência
+	- https://github.com/loine/curso-angular2
+	- https://github.com/angular	
+
+2 - Capitulo 2
+	- https://nodejs.org
+	- NPM - é como se fosse o Maven. Fazendo analogia para o mundo java 
+	- https://www.npmjs.com - Possui várias bibliotecas que utlizamos para o desenvolvimento em Angular
+	- npm install -g typescript
+	- TypeScript é um superconjunto do javascript.
+	- npm install -g @angular/cli	
+
+3 - Capitulo 3
+	- Criar o projeto:
+		- ng new primeiro-projeto
+		- Iniciar o servidor: ng serve
+		- Gerar um novo component: ng g c meu-primeiro2
+
+4 - Capitulo 4
+	- TypeScript pode ser utilizado em qualquer projeto javascript
+	- Transpiler, compila o codigo JS2015 em javascript puro.
+	- Babel, um dos transpile mais populares 
+	- babeljs.io
+
+5 - Capitulo 5 - Módulos
+	- Organiza melhor o código
+	- AppModule - é o módulo raiz default da nossa aplicação	
+	- declarations: 
+	- imports : coloca outros modulos que queremos utilizar
+	- providers: colocamos os servicos que o modulo utiliza. Se o serviço for glogal serve para toda a aplicação
+	- bootstrap: [AppComponent]: existe só no módulo raiz da aplicação 
+	- Podemos criar módulos de funcionalidade.
+	- Criar um modulo: ng g m nome_modulo
+	- Modulo de funcionalidade nao tem Bootstrap
+	- CommonModule fica no module de funcionalidade
+
+6 - Capitulo 6 - Templates
+	- Template é o HTML
+	- Componente é o .ts (arquivo typescript)
+	- Dentro do componente, existe duas maneiras de definir o template:
+		- usando a tag "template", seu conteúdo ficará dentro de `. Recomendado apenas 3 linhas, no máximo. Nesse caso não precisa do .html
+		- usando a tag "templateUrl", informando o caminho do arquivo .html, que contém o conteúdo. Para maiores de 3 linhas.
+
+7 - Capitulo 7 - Servicos
+	- Iniciar o serviço: ng g s cursos/cursos
+	- Necessário declarar o serviço criado no cursos.modules.ts, dentro de providers. Ex: providers: [CursosService]
+
+8 - Capitulo 8 - Plugins Atom e VS Code
+	- CTRL+p - Para procurar arquivos no VS Code. 
+
+9 - Capitulo 9 - Property Binding e Interpolação
+	- Interpolação: 
+		- Usa-se no html: {{ nome_definido_no_componente }}
+	- Property Binding:
+		- Usa-se no html: <img [src]="nome_definido_no_componente" >
+		- Linha anterior é a mesma coisa que: <img bind-src="nome_definido_no_componente" >
+
+10 - Capitulo 10 - Class e Style Binding
+	- http://getbootstrap.com
+	- Fontes:
+		- https://github.com/valor-software/ngx-bootstrap/blob/development/docs/getting-started/ng-cli.md
+		- https://www.npmjs.com/package/ng2-bootstrap
+	- npm install ngx-bootstrap bootstrap --save (Baseado nas fontes acima)
+	- Se não quiser instalar, pode adicionar no cabecalho do index.html, o css externo:
+		- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+11 - Capitulo 11 - Event Binding
+	- Definição de estilos pode ser feita de 3 formas:
+		- style.css - maneira global
+		- styleUrl - dentro do componente, podemos criar um arquivo especifico de CSS para o componente
+		- style - tag dentro do componente, caso de ser pouco conteudo do CSS sendo específico para a página.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
