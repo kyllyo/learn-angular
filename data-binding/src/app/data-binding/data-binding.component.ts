@@ -17,6 +17,8 @@ export class DataBindingComponent implements OnInit {
 
   nomeDoCurso: string = "Angular"
 
+  valorInicial = 15;
+
   pessoa: any = {
     nome: 'asasdf',
     idade: 12
@@ -49,6 +51,11 @@ export class DataBindingComponent implements OnInit {
 
   getCurtirCurso(){
     return true;
+  }
+
+  onMudouValor(evento){
+    console.log('aqui')
+    console.log(evento.novoValor);
   }
 
 }

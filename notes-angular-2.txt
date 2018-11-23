@@ -97,7 +97,30 @@ Notas - Curso Angular 2
 	- @Input esta dentro de @angular/core
 	- Input Properties também pode receber objetos
 
-14 - Capitulo 14 - Componentes Reutilizaveis
+14 - Capitulo 14 - Eventos
+	- O componente pai tem como ficar escutando se suas propriedades mudam onde são utilizadas
+	- EventEmitter é utilizado para tal
+	- Importante dizer, que o EventEmitter fica no pacote @angular/core
+
+15 - Capitulo 15 - Ciclo de Vida
+	- ngOnChanges		-ngAfterContentInit
+	- ngOnInit		-ngAfterContentChecked
+	- ngDoCheck		-ngAfterViewChecked
+	- ngOnDestroy
+	- O ng por padrão já cria o método ngOnInit por default nos componentes criados por esta ferramenta.
+	- Os métodos de ciclo mais utilizados são o ngOnInit e ngOnChanges
+
+16 - Capitulo 16 - DOM
+	- Como acessar uma variavel definida no html, dentro do componente ?
+		- Esse capitulo ensina como fazer.
+	- Definir no HTML a variavel usando a sintaxe: #nomevariavel
+	- No Componente acessar a variavel com @ViewChild('nomevariavel') do tipo ElementRef ou HtmlElement
+
+17 - Capitulo 17 - Angular CLI
+	- npm install -g angular-cli
+
+
+
 
 
 

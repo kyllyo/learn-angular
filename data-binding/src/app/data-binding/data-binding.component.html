@@ -132,7 +132,7 @@
     <div>
       <app-curso [nome]="nomeDoCurso"></app-curso>
 
-      <contador></contador>
+      <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"  ></contador>
     </div>
   </article>
 </section>
