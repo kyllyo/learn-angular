@@ -118,7 +118,8 @@ Notas - Curso Angular 2
 
 17 - Capitulo 17 - Angular CLI
 	- npm install -g angular-cli
-
+	- ng new nome_projeto - cria uma pasta com a estrutura pronta para o projeto
+	- ng init - você inicializa um projeto angular de uma pasta já criada
 
 
 
