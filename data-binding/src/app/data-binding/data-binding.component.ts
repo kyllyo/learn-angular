@@ -13,6 +13,14 @@ export class DataBindingComponent implements OnInit {
   valorAtual: string
   valorSalvo: string
   isMouseOver:boolean = false
+  nome: string = 'abc';
+
+  nomeDoCurso: string = "Angular"
+
+  pessoa: any = {
+    nome: 'asasdf',
+    idade: 12
+  }
 
   onMouseOverOut(){
     this.isMouseOver = !this.isMouseOver;

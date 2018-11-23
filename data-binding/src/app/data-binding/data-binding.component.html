@@ -34,7 +34,7 @@
           <option value="alert-danger">Erro</option>
 
         </select>
-        <br><br>
+        <br><br> 
 
         <div class="alert {{ classe.value }}">
           Texto colorido conforme o valor selecionado
@@ -59,7 +59,8 @@
   
   -->
 
-  <section>
+  <!--
+    <section>
     <article>
       <h3>
         Event binding
@@ -80,10 +81,58 @@
       <br><br>
       <span (mouseover)="onMouseOverOut()"
             (mouseout)="onMouseOverOut()"
-            [class.highlight]="isMouseOver"
-            >
+            [class.highlight]="isMouseOver">
             Passe o mouse sobre mim.          
       </span>
     </article>
 
   </section>
+-->
+
+<!--
+<section>
+  <article>
+    <h3>Two Way data binding</h3>
+    <div>
+      <input type="text" 
+        [value]="nome"
+        (input)="nome = $event.target.value"
+      />
+      <input type="text" 
+        [ngModel]="nome"
+        (ngModelChange)="nome = $event"
+      />
+
+      <input type="text" [(ngModel)]="nome" />
+
+      <input type="text" bindon-ngModel="nome" />
+
+
+
+      <p>
+        Vocẽ digitou: {{ nome }}
+
+      </p>
+      
+      <input type="text" [(ngModel)]="pessoa.nome" /><br>
+      <input type="text" [(ngModel)]="pessoa.idade" />
+      <p>
+          Vocẽ digitou: {{ pessoa.nome }} e tenho {{ pessoa.idade }}
+      </p>
+  
+    </div>
+  </article>
+
+</section>
+-->
+
+<section class="input-output-properties">
+  <article>
+    <h3>Input/Output Properties</h3>
+    <div>
+      <app-curso [nome]="nomeDoCurso"></app-curso>
+
+      <contador></contador>
+    </div>
+  </article>
+</section>

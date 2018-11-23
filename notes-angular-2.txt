@@ -83,9 +83,21 @@ Notas - Curso Angular 2
 		- styleUrl - dentro do componente, podemos criar um arquivo especifico de CSS para o componente
 		- style - tag dentro do componente, caso de ser pouco conteudo do CSS sendo específico para a página.
 
+12 - Capitulo 12 - Two Way Data Binding
+	- NgModel é uma representação de uma entidade. Pode ser atributo simples ou objeto.
+	- ngModel possui um evento chamado change: ngmodelchange
+	- Sintaxe do ngmodel:
+		- <input type="text" [(ngModel)]="nome" />
+	- Temos que declarar o FormsModule dentro da definicao do module que o ngModel será utilizado.
+	- Ex: dentro do app.modules.ts adicionamos FormsModule dentro do import	
 
+13 - Capitulo 13 - Input/Output Properties
+	- Trata da transferencia de atributos e valores entre componentes 
+	- @Input para marcar a propriedade que pode ser lida de outros componentes.
+	- @Input esta dentro de @angular/core
+	- Input Properties também pode receber objetos
 
-
+14 - Capitulo 14 - Componentes Reutilizaveis
 
 
 
