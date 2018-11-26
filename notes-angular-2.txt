@@ -186,9 +186,8 @@ Notas - Curso Angular 2
 		- *ngIf  - recomendado para arvores de elementos grandes
 		- [hidden] - é mais performático - Não tem segurança. O conteúdo está lá.
 
-
-
-
+26 - Capitulo 26 - Diretiva NgSwitch
+	- 
 
 
 
