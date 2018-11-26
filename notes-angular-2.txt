@@ -121,8 +121,30 @@ Notas - Curso Angular 2
 	- ng new nome_projeto - cria uma pasta com a estrutura pronta para o projeto
 	- ng init - você inicializa um projeto angular de uma pasta já criada
 
+18 - Capitulo 18 - CLI - Criando componentes/servicos
+	- ng generate compomente nome_componente 
+	- Forma abreviada: ng g c nome_componente
+	- ng g service nome_servico - para criar um servico
+	- As classes .spec.ts são classes de testes do componente. Utiliza-se o jasmine
+	- Tipos de arquivos que podem ser criados via linha de comando do cli:
+		- component		- service
+		- directive		- pipe	
+		- class			- interface
+		- enum
 
+19 - Capitulo 19 - CLI - Usando Sass, Less ou Stylus
+	- Gerenciador de estilos.
+	- Ao gerar o projeto:
+		- ng new meu-projeto --style=sass
+	- Se tiver um projeto já existente:
+		- ng set defaults.styleExt scss (ou less ou stylus) - O 'set' está deprecated nos angular mais novos.
+	- No angular 6 (mais novo) o comando é:
+		- ng config schematics.@schematics/angular:component.styleext scss (ou less ou styl)
 
+20 - Capitulo 20 - CLI: ng lint, ng test, ng e2e
+	- ng lint - escaneia o codigo, verifica boas praticas do style guide (http://angular.io/styleguide)
+	- ng test - executa os teste jasmine, testes unitarios etc
+	- lint - procura por pequenos erros, 
 
 
 
