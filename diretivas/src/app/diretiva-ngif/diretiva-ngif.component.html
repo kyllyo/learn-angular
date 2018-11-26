@@ -1,3 +1,15 @@
+<h3>Removendo o * e usando template</h3>
+
+<div *ngIf="!mostrarCursos">Lista de Cursos aqui 1;</div>
+
+<ng-template [ngIf]="!mostrarCursos">
+  <div>Lista de cursos aqui 2..</div>
+</ng-template>
+
+
+
+
+<!--
 <h3>*ngIf</h3>
 
 
@@ -26,6 +38,8 @@
   Lista de cursos aqui.
 </div>
 
+
 <div [hidden]="!mostrarCursos">
   Não existem cursos para serem listados
 </div>
+-->

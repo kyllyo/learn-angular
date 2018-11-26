@@ -187,7 +187,46 @@ Notas - Curso Angular 2
 		- [hidden] - é mais performático - Não tem segurança. O conteúdo está lá.
 
 26 - Capitulo 26 - Diretiva NgSwitch
-	- 
+	- Exemplo:
+  		<div class="container" [ngSwitch]="aba">
+    			<p *ngSwitchCase="'mapa'" >Modo Mapa Ativado</p>
+    			<p *ngSwitchCase="'lista'" >Modo Lista Ativado</p>
+    			<p *ngSwitchDefault >Home</p>
+  		</div>
+
+27 - Capitulo 27 - Diretiva NgFor
+	- Exemplo:
+		<ul>
+		  <li *ngFor="let curso of cursos, let i = index">
+		    {{ i + 1 }} - {{ curso }}
+		  </li>
+		</ul>
+
+28 - Capitulo 28 - Motivo do * e <template>
+	- Exemplo:
+		<ng-template [ngIf]="!mostrarCursos">
+		  <div>Lista de cursos aqui 2..</div>
+		</ng-template>
+	
+29 - Capitulo 29 - Diretiva ngClass
+	- https://getbootstrap.com/docs/3.3/components/
+	- Exemplo:
+	    <i class="glyphicon"
+    		  [ngClass]="{
+      		  'glyphicon-star-empty': !meuFavorito,
+	          'glyphicon-star':meuFavorito
+  		    }"
+  		    (click)="onClick()">
+       	  </i>
+
+
+
+
+
+
+
+
+
 
 
 
