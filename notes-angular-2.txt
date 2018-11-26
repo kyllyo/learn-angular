@@ -144,11 +144,17 @@ Notas - Curso Angular 2
 20 - Capitulo 20 - CLI: ng lint, ng test, ng e2e
 	- ng lint - escaneia o codigo, verifica boas praticas do style guide (http://angular.io/styleguide)
 	- ng test - executa os teste jasmine, testes unitarios etc
-	- lint - procura por pequenos erros, 
+	- lint - procura por pequenos erros 
+	- Jasmine - biblioteca de teste orientada a comportamento
 
+21 - Capitulo 21 - Estrutura do projeto
+	- O Angular CLI cria toda a estrutura do projeto
+		- Instala todas as dependencias
+	- Documentacao é sua melhor amiga:
+		- https://angular.io/docs		
 
-
-
+22 - Capitulo 22 - Gerando build de producao
+	- 
 
 
 
