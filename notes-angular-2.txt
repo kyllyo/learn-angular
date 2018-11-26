@@ -154,7 +154,42 @@ Notas - Curso Angular 2
 		- https://angular.io/docs		
 
 22 - Capitulo 22 - Gerando build de producao
-	- 
+	- Build de Desenvolvimento:
+		- ng build ou ng build --dev
+		- A build é gerada dentro do diretorio 'dist'
+			- util para integrar o codigo com o backend
+			- Possivel debugar
+			- main.bundle.js contem todo codigo do projeto + css + html
+	- Build de Producao:
+		- ng build --prod
+		- Diferenca do desenvolvimento:
+			- Este codigo é ofuscado e mimificado, codigo ilegivel comparado com o que é gerado no desenvolvimento
+	- Instalando um servidorzinho http do nodejs
+		- npm install http-server -g
+
+23 - Capitulo 23 - Instalando bibliotecas externas
+	- Instalar o bootstrap (ou qualquer outra biblioteca externa):
+		- npm install -save bootstrap@next (next, instala a ultima versao)
+	- Seguir a documentacao da biblioteca que for utilizar.
+
+24 - Capitulo 24 - Diretivas
+	- Diretivas são uma forma de passarmos instruções para nosso codigo html (template)
+	- Ex: <li *ngFor="let curso of cursos"> {{ curso }} </li>
+	- 2 tipos de diretivas
+		- estruturais (ngFor, ngIf) - interagem com a view e modificam a estrutura da DOM
+		- atributos (ng-class, ng-estyle) - interagem com o elemento em que foram aplicadas
+
+25 - Capitulo 25 - Diretiva NgIf
+	- Mesmo comportamento que o if de qq linguagem de programacao
+	- <div *ngIf="cursos.length > 0" >
+	- [hidden] vs *ngIf
+		- *ngIf  - recomendado para arvores de elementos grandes
+		- [hidden] - é mais performático - Não tem segurança. O conteúdo está lá.
+
+
+
+
+
 
 
 
