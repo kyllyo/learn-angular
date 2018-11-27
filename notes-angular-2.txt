@@ -219,13 +219,35 @@ Notas - Curso Angular 2
   		    (click)="onClick()">
        	  </i>
 
+30 - Capitulo 30 - Diretiva ngStyle
+	- Exemplo:
+<button
+  [ngStyle]="{
+    'backgroundColor': ativo ? 'blue':'gray',
+    'color': ativo ? 'white':'black',
+    'fontWeight': ativo ? 'bold':'normal',
+    'fontSize': tamanhoFonte + 'px'
+  }"
+  (click)="mudarAtivo()">
+  Mudar atributo 'ativo'
+</button>
 
+31 - Capitulo 31 - Operador elvis
+	- Serve para evitar a checagem do objeto ser null
+i	- '?' antes do ponto
+	- Responsável: {{ tarefa.responsavel?.nome: '' }}
+	- Se o 'responsavel' for != de null, então chamamos sua propriedade nome.
 
+32 - Capitulo 32 - ngContent
+	- ngContent coloca o conteudo de quem chama, no componente que o possui
 
+33 - Capitulo 33 - ElementRef e Renderer
+	- Diretiva é um componente sem template
+	- ng g d (directive) shared/fundo-amarelo 
+	- 
 
-
-
-
+34 - Capitulo 34 - HostListener e HostBinding
+	- Muito útil para modificarmos atributos a partir de eventos na página que a diretiva está
 
 
 
