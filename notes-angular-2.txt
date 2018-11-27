@@ -262,7 +262,7 @@ Notas - Curso Angular 2
 	- Servico nada mais é que uma classe que contém alguma lógica na obtenção de dados que são usados no front-end
 
 39 - Capitulo 39 - Injecao de dependencia
-	- 
+	- SIngleton- objeto unico para toda a aplicação 
 
 
 
