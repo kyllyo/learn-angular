@@ -258,6 +258,14 @@ Notas - Curso Angular 2
 	- Servicos é a ponte entre o componente e o backend
 	- Util para não repetir codigo na nossa aplicação
 
+38 - Capitulo 38 - Criando um Servico
+	- Servico nada mais é que uma classe que contém alguma lógica na obtenção de dados que são usados no front-end
+
+39 - Capitulo 39 - Injecao de dependencia
+	- 
+
+
+
 
 
 
