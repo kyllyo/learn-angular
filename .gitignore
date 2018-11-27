@@ -2,3 +2,4 @@
 *.log
 /primeiro-projeto/node_modules
 /diretivas/node_modules
+/servicos/node_modules

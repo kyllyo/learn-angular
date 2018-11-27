@@ -234,7 +234,7 @@ Notas - Curso Angular 2
 
 31 - Capitulo 31 - Operador elvis
 	- Serve para evitar a checagem do objeto ser null
-i	- '?' antes do ponto
+	- '?' antes do ponto
 	- Responsável: {{ tarefa.responsavel?.nome: '' }}
 	- Se o 'responsavel' for != de null, então chamamos sua propriedade nome.
 
@@ -248,6 +248,15 @@ i	- '?' antes do ponto
 
 34 - Capitulo 34 - HostListener e HostBinding
 	- Muito útil para modificarmos atributos a partir de eventos na página que a diretiva está
+
+35 - Capitulo 35 - Diretivas - Input e Property Binding
+
+36 - Capitulo 36 - ngElse
+	- ngElse não existe no angular 
+
+37 - Capitulo 37 - Servicos
+	- Servicos é a ponte entre o componente e o backend
+	- Util para não repetir codigo na nossa aplicação
 
 
 
