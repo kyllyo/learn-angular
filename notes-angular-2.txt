@@ -288,9 +288,15 @@ Notas - Curso Angular 2
 46 - Capitulo 46 - Pipe Puro
 	- 
 
+47 - Capitulo 47 - Pipe Impuro
+	- 
 
+48 - Capitulo 48 - Pipe Async
+	- Útil quando precisamos buscar dados no servidor. Pq as vezes a resposta demora. 
 
-
+49 - Capitulo 49 - Introducao ao roteamento
+	- SPA - Single Page Application
+	- Não dá refresh na página	
 
 
 

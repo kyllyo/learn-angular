@@ -13,6 +13,7 @@
 <p>Livro: {{ livro | json }}</p>
 <br><br><br>
 
+<h4>Pipe Puro</h4>
 <input type="text" [(ngModel)]="filtro">
 <br>
 <input type="text" #novoValor>
@@ -23,3 +24,24 @@
   </li>
 </ul>
 
+<h4>Pipe Impuro</h4>
+<ul>
+  <li *ngFor="let livImpuro of livros | filtroArrayImpuro">
+    {{ livImpuro }}
+  </li>
+</ul>
+
+<h4>Maneira correta de usar filtro nos projetos</h4>
+<ul>
+  <li *ngFor="let liv of obterCursos() ">
+    {{ liv }}
+  </li>
+</ul>
+
+<p>
+  {{ valorAsync2 | async }}
+</p>
+
+<p>
+  {{ valorAsync | async }}
+</p>
