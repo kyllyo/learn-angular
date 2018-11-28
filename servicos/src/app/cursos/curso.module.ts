@@ -5,6 +5,7 @@ import { CursosService } from './cursos.services';
 import { CursosComponent } from './cursos.component';
 
 
+
 @NgModule({
   declarations: [
     CursosComponent

@@ -264,6 +264,31 @@ Notas - Curso Angular 2
 39 - Capitulo 39 - Injecao de dependencia
 	- SIngleton- objeto unico para toda a aplicação 
 
+40 - Capitulo 40 - Utilizando a injeção
+	- @Injectable na classe que se deseja injetar.
+	- colocar no [providers] do módulo que se deseja utilizar
+	- Ou no componente que se deseja. Nesse caso ele terá uma instância própria
+
+41 - Capitulo 41 - Comunicacao entre componentes usando servicos
+	- 	
+
+42 - Capitulo 42 - Injetando servico em outro servico
+	- ng g s shared/log 
+
+43 - Capitulo 43 - Pipes
+	- Utiliza-se os pipes para formatar a saída nos templates.
+	- Ex: {{ livro.dataLancamento | date:'dd-MM-yyyy' }}
+
+44 - Capitulo 44 - Criando pipes
+	- ng g p nome_pipe OU ng g pipe nome_pipe 
+
+45 - Capitulo 45 - Aplicando locale 
+	- 
+
+46 - Capitulo 46 - Pipe Puro
+	- 
+
+
 
 
 
