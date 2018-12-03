@@ -298,6 +298,48 @@ Notas - Curso Angular 2
 	- SPA - Single Page Application
 	- Não dá refresh na página	
 
+50 - Capitulo 50 - Rotas Simples
+	-
+
+51 - Capitulo 51 - RouterLink
+	-
+
+52 - Capitulo 52 - Aplicando CSS em rotas ativas
+	-
+
+53 - Capiutlo 53 - Extrair parametros de roteamento nas rotas
+	-
+
+54 - Capitulo 54 - Escutando mudanças nos parâmetros de roteamento
+	-
+
+55 - Capitulo 55 - Rotas imperativas
+	- 
+
+56 - Capitulo 56 - Definindo e extraindo parametros de url
+	- 
+
+57 - Capitulo 57 - Criando um modulo de rotas
+	-
+
+58 - Capitulo 58 - Organizando em modulos
+	- Módulo de Funcionalidade importamos o 'CommonModule'.
+	- Módulo raiz de aplicacao importamos o 'BrowserModule'. 
+
+59 - Capitulo 59 - Rotas de funcionalidade
+	-
+
+60 - Capiutlo 60 - Rotas Filhas
+	-
+
+61 - Capitulo 61 - Rotas Filhas - Desenvolvendo telas
+	- 
+
+62 - Capitulo 62 - Rotas - Dicas de Performance - Lazy Loading
+	- 
+
+
+
 
 
 
