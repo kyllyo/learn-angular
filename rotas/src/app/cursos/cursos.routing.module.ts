@@ -18,5 +18,4 @@ const cursosRoutes: Routes = [
     exports: [RouterModule]
 })
 export class CursosRoutingModule{
-
 }

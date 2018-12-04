@@ -338,6 +338,31 @@ Notas - Curso Angular 2
 62 - Capitulo 62 - Rotas - Dicas de Performance - Lazy Loading
 	- 
 
+63 - Capitulo 63 - Rotas - Tela de Login 
+	- 
+
+64 - Capitulo 64 - Guarda de rotas - canActivate
+	- 
+
+65 - Capitulo 65 - Guarda de rotas para rotas filhas
+	- 
+
+66 - Capitulo 66 -Guarda de rotas: canDeactivate
+	- Ao sair de um formulário, podemos perguntar se o usuário tem certeza de que é isso que ele quer. 
+
+67 - Capitulo 67 - Guarda de rotas: canDeactivate com Interface Generica
+	- 
+
+68 - Capitulo 68 - Guarda de rotas: carregando dados antes da rota ser ativada
+	-
+
+
+
+
+
+
+
+
 
 
 
