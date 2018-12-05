@@ -32,9 +32,9 @@ export class AlunoDetalheComponent implements OnInit {
 
     // )
     this.inscricao = this.route.data.subscribe(
-      (info: {aluno: Aluno}) => {
+      (info: {alunoResolvido: Aluno}) => {
         console.log(info)
-        this.aluno = info.aluno;
+        this.aluno = info.alunoResolvido;
       }
     );
   }

@@ -356,6 +356,34 @@ Notas - Curso Angular 2
 68 - Capitulo 68 - Guarda de rotas: carregando dados antes da rota ser ativada
 	-
 
+69 - Capitulo 69 - Guarda de rotas: Nao deixar carregar modulos sem permissao
+	- 
+
+70 - Capitulo 70 - Rota padrao para pagina nao encontrada
+	- 
+
+71 - Capitulo 71 - Configurando o estilo da rota. Html5 ou #
+	- useHash: true, no forRoot 
+
+72 - Capitulo 72 - Formularios: 2 Formas
+	- Template Driven
+		- Tudo no HTML
+		- FormGroup
+		- ngSubmit
+	- Data Driven (reativo)
+		- Configurado no componente
+		- Validacoes no componente
+		
+73 - Capitulo 73 - Inciando projeto de Formulario
+	- ng new forms --routing
+	- npm install ngx-bootstrap bootstrap --save (Assim instala a versao 4 do bootstrap)
+	- npm install ngx-bootstrap bootstrap@3.3.7 --save (instala a versao 3 do bootstrap)
+
+74 - Capitulo 74 - ngForm, ngSubmit, ngModel
+	- 
+
+75 - Capitulo 75 - ngModel (two-way data-binding)
+	-
 
 
 
