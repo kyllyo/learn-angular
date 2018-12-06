@@ -385,9 +385,35 @@ Notas - Curso Angular 2
 75 - Capitulo 75 - ngModel (two-way data-binding)
 	-
 
+76 - Capitulo 76 - Forms - Modulos e Formularios
+	-
 
+77 - Capitulo 77 - Forms - Validacao de campos
+	-
 
+78 - Capitulo 78 - Forms - Aplicando CSS na validacao dos campos
+	-
 
+79 - Capitulo 79 - Forms - Mensagens de erro de validacao
+	- 
+
+80 - Capitulo 80 - Forms - Desabilitando o botao de submit de form invalido
+	- 
+
+81 - Capitulo 81 - Forms - Dados do Form com JSON
+	-
+
+82 - Capitulo 82 - Forms - Add campos de endereco
+	-
+
+83 - Capitulo 83 - Forms - Simplificando CSS e mensagens de erro
+	-
+
+84 - Capitulo 84 - Forms - Form Group
+	- ngModelGroup
+
+85 - Capitulo 85 - Usando webservice para buscar o CEP
+	-
 
 
 
