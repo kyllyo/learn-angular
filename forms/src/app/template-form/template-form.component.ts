@@ -4,6 +4,7 @@ import { Http } from '@angular/http';
 //import 'rxjs/add/operator/switchMap';
 
 import { map } from 'rxjs/operators';
+import { ConsultaCepService } from '../shared/services/consulta-cep.service';
 
 @Component({
   selector: 'app-template-form',
@@ -18,7 +19,8 @@ export class TemplateFormComponent implements OnInit {
     nome: null,
     email: null
   }
-  constructor(private http: Http) { }
+  constructor(private http: Http,
+          private cepService: ConsultaCepService) { }
 
   ngOnInit() {
   }
@@ -49,17 +51,8 @@ export class TemplateFormComponent implements OnInit {
   }
 
   consultaCEP(cep, form){
-    var cep = cep.replace(/\D/g,'')
-    if(cep != ""){
-      var validacep = /^[0-9]{8}$/;
-      if(validacep.test(cep)){
-        this.resetDadosForm(form);
-        this.http.get(`//viacep.com.br/ws/${cep}/json`)
-          .subscribe( dados => this.populaDadosForm(dados.json(), form) );
-//          .pipe( map( dados => console.log(dados) ) );
-      }
-    }
-//    console.log(cep)
+    this.cepService.consultaCEP(cep, this.resetDadosForm, form)
+      .subscribe(dados => this.populaDadosForm(dados.json(), form))
   }
 
   resetDadosForm(form){

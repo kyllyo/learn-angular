@@ -473,6 +473,65 @@ Aula sobre mudancas do Angular 2 para o Angular 4
 99 - Capitulo 99 - Forms reativos - validacao dos campos pelo botao submit
 	-
 
+100 - Capitulo 100 - Forms reativos - servico de estados brasileiros
+	-
+
+101 - Capitulo 101 - Forms reativos - servico de consulta cep dentro do modulo compartilhado
+	-
+
+102 - Capitulo 102 - Forms reativos - organizando melhor modulos
+	-
+
+103 - Capitulo 103 - Forms reativos - combobox (select)
+	- usar o ngValue ao inves do value em select quando estamos trabalhando com objetos.
+	- o angular usa o operador de referencia por default. O correto seria utilizar o operador de valor.
+	- usar o compareWith no select e implementar o metodo de comparacao. 
+	- Metodo compararCargos esta no data-form.component.ts 
+		- github.com/loiane/curso-angular/.../forms/.../data-form/data-form.component.ts
+	- Valores simples podem ser utilizados com value mesmo. Mas se for objeto, tem que utilizar o ngValue e compareWith
+
+104 - Capitulo 104 - Forms reativos - combobox com multiplas opcoes
+	- <select multiple ...
+
+105 - Capitulo 105 - Forms reativos - radiobutton
+	-<div *ngFor="let opcacao of opcoes" ...
+	- <input type="radio" formControlName="newsletter">...
+
+106 - Capitulo 106 - Forms reativos - Checkbox tugglei (Só um, tipo aceita os termos .... )
+	- <input type="checkbox" 
+	- para validar devemos usar na definicao dos campos do ngGroup:
+		- Ex:
+			-termos:[null, Validators.pattern[('true')]	
+
+107 - Capitulo 107 - Forms reativos - Checkbox dinamicos - FormArray
+	-<div ... formArrayName="frameworks" ngFor="let item of formulario.get('frameworks').controls; let i = index">
+
+108 - Capiculo 108 - Forms reativos - Validacao customizada no checkbox (formarray)
+	- Utilizacao de programacao funcional. Metodos 'map' e 'reduce'
+
+109 - Capitulo 109 - Forms reativos - Validacao no campo CEP
+	-
+
+110 - Capitulo 110 - Forms reativos - Validacao de dois campos iguais
+	- ng2-validation - Muitas validações já prontas
+
+111 - Capitulo 111 - Forms reativos - Validacões assincronas
+	- São validações feitas do lado do servidor
+	- Os Observables são preguiçosos. Eles só executam quando fazemos o subscribe.
+	- Para utilizar os Operadores em um Observable, utilizamos o
+.pipe ( e dentro usamos qualquer operador. Ex: delay,map, tap etc)
+
+112 - Capitulo 112 - Forms reativos - Serviço de mensagens de erros
+	-
+
+113 - Capitulo 113 - Forms reativos - Reagindo a mudancas
+	-
+
+
+
+
+
+
 
 
 
