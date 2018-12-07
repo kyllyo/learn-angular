@@ -452,9 +452,26 @@ Aula sobre mudancas do Angular 2 para o Angular 4
 92 - Capitulo 92 - Forms reativos - Fazendo submit
 	-  
 
+93 - Capitulo 93 - Forms reativos - Resetando o form
+	-
 
+94 - Capitulo 94 - Forms reativos - Validacao de campos
+	-
 
+95 - Capitulo 95 - Forms reativos - FormControl e CSS de validacao de campos
+	-
 
+96 - Capitulo 96 - Forms reativos - migrando template driven para form reativo
+	-
+
+97 - Capitulo 97 - Forms reativos - FormGroups
+	-
+
+98 - Capitulo 98 - Forms reativos - autopopulando campos pelo cep
+	-
+
+99 - Capitulo 99 - Forms reativos - validacao dos campos pelo botao submit
+	-
 
 
 
