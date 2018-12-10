@@ -524,8 +524,8 @@ Aula sobre mudancas do Angular 2 para o Angular 4
 112 - Capitulo 112 - Forms reativos - Serviço de mensagens de erros
 	-
 
-113 - Capitulo 113 - Forms reativos - Reagindo a mudancas
-	-
+113 - Capitulo 113 - Forms reativos - Reagindo a mudancas reativamente
+	- formulario.statusChanges
 
 
 

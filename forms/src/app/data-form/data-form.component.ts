@@ -4,6 +4,8 @@ import { Http } from '@angular/http';
 import { DropdownService } from '../shared/services/dropdown.service';
 import { EstadoBr } from '../shared/models/estado-br';
 import { ConsultaCepService } from '../shared/services/consulta-cep.service';
+import { distinctUntilChanged, tap, switchMap } from 'rxjs/operators';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-data-form',
@@ -43,6 +45,44 @@ export class DataFormComponent implements OnInit {
 
     });
 
+     this.formulario.get('endereco.cep').valueChanges.subscribe(
+       (dados: string) => {
+         try{
+          var validacep = /^[0-9]{8}$/;
+          var validacep1 = /^[0-9]{5}-[0-9]{3}$/;
+         if(validacep.test(dados) || validacep1.test(dados)){
+           console.log(dados)
+           var result = new String(dados)
+//          if(validacep.test(dados)){            
+            this.cepService.consultaCEP(result,this.resetEndereco, this.formulario).subscribe(
+              valores => this.populaDadosForm(valores.json()),error => console.log(error)
+             ) 
+            
+  //         }
+         }
+        }catch(er){
+          return dados
+          //console.log(er)
+        }
+        }           
+     )
+    }
+         
+      //   dados.length == 8 ? 
+      //  this.cepService.consultaCEP(dados.replace(/\D/g, ''),this.resetEndereco, this.formulario)
+      //  : empty()))
+    //  .pipe(
+    //    //distinctUntilChanged(),
+    //    tap(value => console.log(value)),
+    //    //switchMap( value =>  empty() )
+    //     //value.length == 8 ? 
+    //     // this.cepService.consultaCEP(this.formulario.get("endereco.cep").value.replace(/\D/g, ''), 
+    //     // this.resetEndereco, this.formulario)
+    //     // : empty()
+    //    //)
+    //  )
+     //.subscribe(dados => dados ? this.populaDadosForm(dados):  {})
+
     /*this.formulario =  new FormGroup({
       nome: new FormControl('Loiane'),
       email: new FormControl('loiane@brasil.com.br')
@@ -50,7 +90,7 @@ export class DataFormComponent implements OnInit {
 */
 
 
-  }
+  
 
   onSubmit() {
     console.log(this.formulario.value);
@@ -153,7 +193,7 @@ export class DataFormComponent implements OnInit {
     this.formulario.patchValue({
       endereco: {
         rua: dados.logradouro,
-        cep: dados.cep,
+        //cep: dados.cep,
         complemento: dados.complemento,
         bairro: dados.bairro,
         cidade: dados.localidade,
