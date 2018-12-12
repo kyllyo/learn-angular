@@ -527,16 +527,54 @@ Aula sobre mudancas do Angular 2 para o Angular 4
 113 - Capitulo 113 - Forms reativos - Reagindo a mudancas reativamente
 	- formulario.statusChanges
 
+114 - Capitulo 114 - Forms reativos - Campo input customizado
+	- ValueAccessor
+	- ControlValueAcessor
+	- forwardRef - Funcao angular para passar a referencia.
+	
+...
 
 
+118 - Capitulo 118 - Http  
+	- ng new requests-http --routing --style=scss -S (-S é para não gerar os arquivos de teste)
+	- npm install bootstrap --save - (Instalando o Bootstrap) - Dessa forma pega a ultima versao disponivel no repositorio do NPM 
+	- Para especificar uma versao se coloca:
+		- npm install bootstrap@3.3.7
+	
+	- Para importar o bootstrap para o projeto, colocar dentro do arquivo css a linha:
+		-@import '-bootstrap/dist/css/bootstrap.min.css';
+	- ngx-bootstrap - é para não ser necessário utilizar o jquery. Dar acesso a modais.
+	- Para instalar: npm install ngx-bootstrap --save
 
+119 - Capitulo 119 - Simulando um servidor REST
+	- json-server
+	- npm install -g json-server
+	- db.json
+	- json-server --watch db.json
+	- rest client (plugin do vs code)
 
+120 - Capitulo 120 - http get listar registros
+	- 
 
+121 - Capitulo 121 - Dica sobre variavel de ambiente
+	- enviroments 
 
+122 - Capitulo 122 - Pipe Async
+	- Problema com subscribe
+		- A cada subscribe, devemos fazer o unsubscribe no destroy
+		- Senão fizer, pode dar memory leaks
+	- cursos$ (sabe-se que é um Observable. Convenção)
+	- this.service.list().subscribe(dados => this.cursos = dados);
+	- Substituir linha acima por:
+		- No Componente:
+			- this.cursos$ = this.service.list();
+		- No Html:
+			- *ngFor='let curso of cursos$ | async as cursos' 
+			- cursos é uma variavel disponivel na pagina e possui o resultado de cursos$. Com isso já está carregado o resultado desse observable.  E serve para o resto da pagina html do componente.
 
-
-
-
+123 - Capitulo 123 - Unsubscribe Automatico
+	- Caso a gente nao consiga utilizar o | async
+	- Sempre que possivel utilize o | async. Caso nao consiga utilizar, é importante fazer o unsubscribe. Evita problemas de lentidao e de memoria.
 
 
 
